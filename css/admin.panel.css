@@ -1,0 +1,222 @@
+/* Admin Panel Styles Here */
+.nl-filt_and_sort {
+    width: 180px;
+    row-gap: 30px;
+    height: fit-content;
+}
+.nl-accounts_list-wrap {
+    width: calc(100% - 180px - 50px);
+    height: fit-content;
+}
+.nl-fas_item {
+    width: 100%;
+    height: fit-content;
+}
+.nl-fas_item select {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--light-gray);
+    font-size: 12px;
+    color: var(--blue);
+}
+.nl-fas_item.search, .nl-fas_item label {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #F3E0F3;
+    font-size: 12px;
+    color: var(--blue);
+}
+.nl-fas_item input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+.nl-fas_item.search input {
+    width: calc(100% - 26px);
+}
+.nl-fas_item h5 {
+    width: 100%;
+    margin: 0 0 8px;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--blue);
+}
+.nl-fasist_item {
+    width: 50%;
+    font-size: 12px;
+    color: var(--blue);
+    align-items: center;
+}
+.nl-fasi_from_to {
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--light-gray);
+}
+.nl-fasist_item span {
+    width: calc(100% - 55px);
+    text-align: center;
+}
+.nl-fasist_item input {
+    width: 55px;
+    border: 1px solid #F3E0F3;
+    border-radius: 8px;
+    background-color: #fff;
+    height: 30px;
+    text-align: center;
+}
+.nl-fas_item.duble label:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+label.nl-radio-wrap {
+    position: relative;
+    border: none;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.nl-radio-wrap input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.nl-radio {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--light-gray);
+}
+.nl-radio::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 4px);
+    left: calc(50% - 4px);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.nl-radio-wrap input:checked ~ .nl-radio {
+    background: linear-gradient(278.3deg, #CA10EA 5.65%, #E73C79 131.48%);
+}
+.nl-btn_transparent {
+    border: 1px solid #F2E9F2;
+    border-radius: 14px;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: #8E9BB1;
+    font-size: 12px;
+}
+.nl-btn_grad {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 14px;
+    background: linear-gradient(278.3deg, #CA10EA 5.65%, #E73C79 131.48%);
+}
+.nl-btn_transparent:hover {
+    filter: brightness(.8);
+}
+
+/* Accounts ListStyle */
+.nl-heading {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--blue);
+    margin: 0 0 30px;
+}
+
+.nl-al_item {
+    column-gap: 7px;
+    justify-content: space-between;
+}
+.nl-alimi_image {
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-right: 12px;
+}
+.nl-al_item p {
+    font-size: 12px;
+    color: #8E9BB1;
+}
+.nl-al_item h4 {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: var(--blue);
+}
+.nl-alimiw-prot {
+    align-items: flex-end;
+}
+.nl-alimiw-prot svg {
+    margin-right: 8px;
+}
+.nl-alimiw-prot h4 {
+    width: calc(100% - 20px);
+}
+.nl-al_item:nth-child(odd) .nl-path {
+    background-color: var(--light-gray);
+}
+.nl-al_item .nl-path {
+    padding: 15px;
+    border-radius: 6px;
+}
+.nl-al_item .nl-path:first-child {
+    border-radius: 22px 6px 6px 22px;
+}
+.nl-al_item .nl-path:last-child {
+    border-radius: 6px 22px 22px 6px;
+}
+.nl-ali_meta-info {
+    width: 280px;
+}
+.nl-ali_id {
+    width: 90px;
+}
+.nl-ali_num {
+    width: 140px;
+}
+.nl-ali_status {
+    width: 120px;
+}
+.nl-ali_reg_date {
+    width: 185px;
+}
+.nl-ali_last_activity-datetime {
+    width: 240px;
+}
+
+/* Pagination Styles */
+.nl-alw-nav {
+    margin: 25px 0;
+    align-items: center;
+    column-gap: 10px;
+}
+.nl-alw-nav .nl-btn_transparent {
+    padding: 8px;
+    display: flex;
+    width: fit-content;
+}
+.nl-alw-nav .nl-btn_grad {
+    align-items: center;
+    display: flex;
+}
+.nl-alw-nav p {
+    font-size: 14px;
+    color: #8E9BB1;
+}
+
+
+/* ---------- Media Styles ---------- */
+@media (max-width: 1200px) { ... }
+@media (max-width: 992px) { ... }
+@media (max-width: 768px) { ... }
+@media (max-width: 576px) { ... }
