@@ -66,6 +66,9 @@
     height: 30px;
     text-align: center;
 }
+.nl-fas_item.duble label {
+    width: 100%;
+}
 .nl-fas_item.duble label:nth-child(2) {
     margin-bottom: 10px;
 }
