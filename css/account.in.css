@@ -231,6 +231,16 @@ section.nl-account_meta_info-header::after {
     border-radius: 20px;
     overflow: hidden;
 }
+.nl-chli_icon {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    background: linear-gradient(274.91deg, #001A48 -85.39%, #E73C79 130%);
+}
+.nl-chli_icon.pink {
+    background: linear-gradient(278.3deg, #CA10EA 5.65%, #E73C79 131.48%);
+}
 .nl-chli_info-text_wrap {
     width: calc(100% - 63px);
     margin-left: 15px;
@@ -248,7 +258,13 @@ section.nl-account_meta_info-header::after {
     color: #B7BECB;
     text-align: right;
 }
-p.nl-chliitw_message {
+.claim .nl-chli_info-text_wrap h4 {
+    width: 60%;
+}
+.claim .nl-chli_info-text_wrap p {
+    width: 40%;
+}
+.nl-chli_info-text_wrap p.nl-chliitw_message {
     width: 100%;
     text-align: left;
     font-size: 12px;
@@ -256,16 +272,22 @@ p.nl-chliitw_message {
 }
 .nl-chliitw_message-status {
     width: 100%;
+    margin-top: 5px;
 }
 .nl-chliitw_message-status p {
     font-size: 10px;
     width: calc(100% - 20px);
     text-align: left;
 }
+.nl-chliitw_message-status.pink p {
+    width: 100%;
+    color: #CB11EA;
+}
 /* Important Info Styles */
 .nl-important-info {
     width: 190px;
     row-gap: 12px;
+    height: fit-content;
 }
 .nl-if_item {
     width: 100%;
@@ -307,9 +329,43 @@ p.nl-chliitw_message {
     font-size: 12px;
     font-weight: 700;
 }
-
-
-
+/* Show More Styles */
+.nl-show_more {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 45px;
+    box-sizing: content-box;
+    transition: all .3s ease;
+}
+.nl-show_more.not_opened {
+    padding-bottom: 0;
+    transition: all .3s ease;
+}
+.nl-show_more.not_opened::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: transparent;
+    z-index: -1;
+}
+.nl-show_more.not_opened::after {
+    background-image: linear-gradient(0deg, #fff 40%, transparent 100%);
+    z-index: 1;
+}
+.nl-show_more .nl-shm_btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .3s ease;
+}
+.nl-show_more.not_opened .nl-shm_btn {
+    top: auto;
+    left: 15px;
+    z-index: 2;
+}
 
 /* ---------- Media Styles ---------- */
 @media (max-width: 1200px) { ... }

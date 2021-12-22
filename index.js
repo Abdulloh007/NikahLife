@@ -95,4 +95,48 @@ window.addEventListener('DOMContentLoaded', function () {
         })
     });
 
+    //Show More
+    const showMoreList = document.querySelectorAll('.nl-show_more');
+
+    function showMoreFromeList(elem) {
+        const showMoreItem = elem.querySelectorAll('.nl-shm_item');
+        let showMoreBtn = elem.querySelector('.nl-shm_btn'),
+        collapseHeight = 0;
+
+        for (let i = 0; i < parseInt(elem.dataset.show); i++) {
+            if (i == parseInt(elem.dataset.show) - 1) {
+                collapseHeight += 10 * (parseInt(elem.dataset.show) - 1) + 80;
+            }
+            collapseHeight += showMoreItem[i].offsetHeight;
+            elem.style.height = collapseHeight + 'px';
+            if (i == parseInt(elem.dataset.show) - 1) {
+                collapseHeight = 0;
+                break;
+            }
+        }
+
+        showMoreBtn.addEventListener('click', function () {
+            if (elem.classList.contains('not_opened')) {
+                elem.style.height = elem.scrollHeight + 'px';
+                elem.classList.remove('not_opened');
+                this.innerHTML = `Скрыть`;
+            }else if (!elem.classList.contains('not_opened')) {
+                for (let i = 0; i < parseInt(elem.dataset.show); i++) {
+                    if (i == parseInt(elem.dataset.show) - 1) {
+                        collapseHeight += 10 * (parseInt(elem.dataset.show) - 1) + 80;
+                    }
+                    collapseHeight += showMoreItem[i].offsetHeight;
+                    elem.style.height = collapseHeight + 'px';
+                    if (i == parseInt(elem.dataset.show) - 1) {
+                        collapseHeight = 0;
+                        break;
+                    }
+                }
+                elem.classList.add('not_opened');
+                this.innerHTML = `Загрузить все`;
+            }
+        })
+    }
+    showMoreList.forEach(item => showMoreFromeList(item));
+
 })
