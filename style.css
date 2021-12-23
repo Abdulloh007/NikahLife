@@ -256,23 +256,28 @@ nav .nl-part {
 .nl-search-form svg {
     margin-right: 10px;
 }
-.nl-caunt-tracker {
+/* .nl-caunt-tracker {
     -webkit-column-gap: 25px;
     column-gap: 25px;
-}
+} */
 .nl-ct_item {
+    margin-right: 25px;
     font-size: 12px;
     color: var(--blue);
     align-items: center;
+}
+.nl-caunt-tracker .nl-ct_item:last-child {
+    margin-right: 0;
 }
 .nl-ct_item svg {
     width: 25px;
     height: 25px;
     margin-right: 5px;
 }
-.nl-extra_links {
-    -webkit-column-gap: 10px;
-    column-gap: 10px;
+.nl-extra_links .nl-xl_item:first-child {
+    /* -webkit-column-gap: 10px;
+    column-gap: 10px; */
+    margin-right: 10px;
 }
 .nl-xl_item {
     padding: 8px;

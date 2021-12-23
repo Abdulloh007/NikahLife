@@ -101,10 +101,6 @@ section.nl-account_meta_info-header::after {
 
 /* Album Styles */
 .nl-album {
-    -webkit-column-gap: 7px;
-    column-gap: 7px;
-    -webkit-row-gap: 7px;
-    row-gap: 7px;
     width: calc((100px * 2) + (7px * (2 - 1)));
     align-content: baseline;
 }
@@ -112,8 +108,13 @@ section.nl-account_meta_info-header::after {
     position: relative;
     width: 100px;
     height: 140px;
+    margin-right: 7px;
+    margin-bottom: 7px;
     border-radius: 14px;
     overflow: hidden;
+}
+.nl-album .nl-a_item:nth-child(2n) {
+    margin-right: 0;
 }
 .nl-a_item img {
     position: absolute;
@@ -161,8 +162,6 @@ section.nl-account_meta_info-header::after {
     padding: 10px 15px;
 }
 .nl-tab_nav {
-    -webkit-column-gap: 15px;
-    column-gap: 15px;
     margin-bottom: 25px;
 }
 .nl-tab_nav li {
@@ -170,14 +169,16 @@ section.nl-account_meta_info-header::after {
     font-weight: 700;
     font-family: 'Ubuntu', sans-serif;
     color: #BFA4BF;
+    margin-right: 15px;
+}
+.nl-tab_nav li:last-child {
+    margin-right: 0;
 }
 .nl-tab_nav li.active {
     color: var(--blue);
 }
 .nl-nd-tab_nav {
     position: relative;
-    -webkit-column-gap: 7px;
-    column-gap: 7px;
     -webkit-row-gap: 7px;
     row-gap: 7px;
     padding-bottom: 15px;
@@ -195,10 +196,14 @@ section.nl-account_meta_info-header::after {
     font-size: 12px;
     color: var(--blue);
     padding: 5px 10px;
+    margin-right: 7px;
     border-radius: 9px;
     background-color: var(--light-gray);
     cursor: pointer;
     transition: filter .3s ease;
+}
+.nl-nd-tab_nav li:last-child {
+    margin-right: 0;
 }
 .nl-nd-tab_nav li:hover {
     filter: brightness(.9);
@@ -299,13 +304,12 @@ section.nl-account_meta_info-header::after {
 /* Important Info Styles */
 .nl-important-info {
     width: 190px;
-    -webkit-row-gap: 12px;
-    row-gap: 12px;
     height: fit-content;
 }
 .nl-if_item {
     width: 100%;
     padding: 10px 15px;
+    margin-bottom: 12px;
     background-color: #F9F0F9;
     border-radius: 14px;
     align-items: center;
@@ -366,7 +370,7 @@ section.nl-account_meta_info-header::after {
     z-index: -1;
 }
 .nl-show_more.not_opened::after {
-    background-image: linear-gradient(0deg, #fff 50%, #0000 100%);
+    background-image: linear-gradient(0deg, #fff 50%, #fff0 100%);
     z-index: 1;
 }
 .nl-show_more .nl-shm_btn {
@@ -485,18 +489,27 @@ section.nl-account_meta_info-header::after {
     margin-left: auto;
 }
 .nl-pch_item.red {
-    border-color: #ED4B47;
     width: 80%;
+}
+.nl-pch_item.red p.nl-pchi_message {
+    border-color: #ED4B47;
 }
 .nl-pchi_header span {
     font-size: 10px;
     color: #B7BECB;
     padding: 0 15px
 }
+.nl-pchi_header p {
+    font-size: 12px;
+    color: #ED4B47;
+}
 .nl-pchi_header h4 {
     font-size: 12px;
     margin: 0;
     color: var(--blue);
+}
+.nl-pop_up-wrap.claim .nl-pchi_header h4 {
+    width: 100%;
 }
 .nl-pchi_header {
     margin-bottom: 5px;
@@ -527,6 +540,12 @@ section.nl-account_meta_info-header::after {
     color: #9AA5BA;
     text-align: center;
     width: 100%;
+}
+.nl-pchi_comment.claim {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 14px;
+    border: 1px solid #EBDAEB;
 }
 
 /* ---------- Media Styles ---------- */
