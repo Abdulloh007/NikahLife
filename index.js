@@ -69,7 +69,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     function popUper(elem) {
         popUps.forEach((item) => {
-            const closeBtn = item.querySelector('.fa-close');
+            const closeBtn = item.querySelector('.nl-close');
             closeBtn.addEventListener('click', function () {
                 item.classList.remove('active');
             })
@@ -105,7 +105,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
         for (let i = 0; i < parseInt(elem.dataset.show); i++) {
             if (i == parseInt(elem.dataset.show) - 1) {
-                collapseHeight += 10 * (parseInt(elem.dataset.show) - 1) + 80;
+                collapseHeight += 10 * (parseInt(elem.dataset.show) - 1) + 90;
             }
             collapseHeight += showMoreItem[i].offsetHeight;
             elem.style.height = collapseHeight + 'px';

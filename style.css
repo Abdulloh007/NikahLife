@@ -49,7 +49,7 @@ p{
 }
 img{
     max-width: 100%;
-    height: fit-content;
+    height: auto;
 }
 /* Animations */
 @keyframes fade {
@@ -181,16 +181,16 @@ main.nl-main {
 }
 .nl-pop_up-wrap {
     position: relative;
-    width: 370px;
+    width: 425px;
     margin: auto auto;
     background: #FFFFFF;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 65px 50px;
-    border-radius: 6px;
+    padding: 40px;
+    border-radius: 30px;
 }
 .nl-pop_up-header {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 .nl-pop_up-header h4 {
     font-size: 20px;
@@ -234,13 +234,14 @@ nav.fix{
     box-shadow: 0 0 20px -5px #0000001a;
 }
 nav .nl-part {
-    column-gap: 40px;
+    justify-content: space-between;
+    width: calc(100% - 170px - 60px);
 }
 .nl-logo {
     width: 170px;
 }
 .nl-search-form {
-    width: 360px;
+    width: calc(100% - 575px - 75px - 80px);
     background-color: var(--light-gray);
     border-radius: 30px;
     padding: 8px 10px;
@@ -256,6 +257,7 @@ nav .nl-part {
     margin-right: 10px;
 }
 .nl-caunt-tracker {
+    -webkit-column-gap: 25px;
     column-gap: 25px;
 }
 .nl-ct_item {
@@ -269,6 +271,7 @@ nav .nl-part {
     margin-right: 5px;
 }
 .nl-extra_links {
+    -webkit-column-gap: 10px;
     column-gap: 10px;
 }
 .nl-xl_item {

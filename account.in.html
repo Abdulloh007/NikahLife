@@ -205,7 +205,7 @@
                                     <li><b>4</b> заблокированных</li>
                                 </ul>
                                 <div class="nl-nd-tab_item nl-chat-list">
-                                    <div class="nl-chl_item nl-dfw">
+                                    <div id="chat-view" class="nl-chl_item nl-pop_up-btn nl-dfw">
                                         <div class="nl-chli_avatar">
                                             <img src="./assets/img/default_1.jpg" alt="">
                                         </div>
@@ -290,7 +290,7 @@
                                     <li>оскорбления</li>
                                 </ul>
                                 <div class="nl-nd-tab_item nl-chat-list">
-                                    <div class="nl-chl_item nl-dfw">
+                                    <div id="chat-view-warn" class="nl-chl_item nl-pop_up-btn nl-dfw">
                                         <div class="nl-chli_avatar">
                                             <img src="./assets/img/default_1.jpg" alt="">
                                         </div>
@@ -500,12 +500,320 @@
                                     <h3>IP 112.34.11.230</h3>
                                     <p>lg ldk-210 (android 10)  RU  v.1.0.3</p>
                                 </div>
-                                <button class="nl-btn_transparent nl-dfw nl-alt-center">
+                                <button id="history" class="nl-btn_transparent nl-pop_up-btn nl-dfw nl-alt-center">
                                     <span>История</span>
                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5.25 2.625L9.625 7L5.25 11.375" stroke="#BFA4BF" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- PopUp Section -->
+            <section class="nl-popups">
+                <div data-target="history" class="nl-pop_up">
+                    <div class="nl-pop_up-wrap">
+                        <div class="nl-pop_up-header">
+                            <h4>История входов в систему</h4>
+                            <i class="nl-close">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25 7L7 25" stroke="#E0CCE0" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M25 25L7 7" stroke="#E0CCE0" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </i>
+                        </div>
+                        <ul data-show="5" class="nl-ip-list nl-show_more not_opened">
+                            <li class="nl-ipl_item nl-shm_item nl-dfw nl-jc-sb">
+                                <div class="ip">
+                                    <span>IP адрес</span>
+                                </div>
+                                <div class="date">
+                                    <span>Дата</span>
+                                </div>
+                                <div class="device">
+                                    <span>Устройство</span>
+                                </div>
+                                <div class="lang">
+                                    <span>Язык</span>
+                                </div>
+                                <div class="version">
+                                    <span>Версия</span>
+                                </div>
+                            </li>
+                            <li class="nl-ipl_item nl-shm_item nl-dfw nl-jc-sb">
+                                <div class="ip">
+                                    <span>94.180.178.125</span>
+                                </div>
+                                <div class="date">
+                                    <span>Dec. 9, 2021, 5:27 a.m.</span>
+                                </div>
+                                <div class="device nl-dfw nl-alt-center">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 1.5H5C4.44772 1.5 4 1.94772 4 2.5V13.5C4 14.0523 4.44772 14.5 5 14.5H11C11.5523 14.5 12 14.0523 12 13.5V2.5C12 1.94772 11.5523 1.5 11 1.5Z" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4 3.5H12" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4 12.5H12" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>lg ldk-210 (android 10)</span>
+                                </div>
+                                <div class="lang">
+                                    <span>RU</span>
+                                </div>
+                                <div class="version">
+                                    <span>v.1.0.3</span>
+                                </div>
+                            </li>
+                            <li class="nl-ipl_item nl-shm_item nl-dfw nl-jc-sb">
+                                <div class="ip">
+                                    <span>94.180.178.125</span>
+                                </div>
+                                <div class="date">
+                                    <span>Dec. 9, 2021, 5:27 a.m.</span>
+                                </div>
+                                <div class="device nl-dfw nl-alt-center">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 12L13 12C13.5523 12 14 11.5523 14 11L14 4C14 3.44771 13.5523 3 13 3L3 3C2.44771 3 2 3.44771 2 4L2 11C2 11.5523 2.44771 12 3 12Z" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10 14H6" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M2 9.5H14" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 12V14" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                    <span>lg ldk-210 (android 10)</span>
+                                </div>
+                                <div class="lang">
+                                    <span>RU</span>
+                                </div>
+                                <div class="version">
+                                    <span>v.1.0.3</span>
+                                </div>
+                            </li>
+                            <li class="nl-ipl_item nl-shm_item nl-dfw nl-jc-sb">
+                                <div class="ip">
+                                    <span>94.180.178.125</span>
+                                </div>
+                                <div class="date">
+                                    <span>Dec. 9, 2021, 5:27 a.m.</span>
+                                </div>
+                                <div class="device nl-dfw nl-alt-center">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 1.5H5C4.44772 1.5 4 1.94772 4 2.5V13.5C4 14.0523 4.44772 14.5 5 14.5H11C11.5523 14.5 12 14.0523 12 13.5V2.5C12 1.94772 11.5523 1.5 11 1.5Z" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4 3.5H12" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4 12.5H12" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>lg ldk-210 (android 10)</span>
+                                </div>
+                                <div class="lang">
+                                    <span>RU</span>
+                                </div>
+                                <div class="version">
+                                    <span>v.1.0.3</span>
+                                </div>
+                            </li>
+                            <li class="nl-ipl_item nl-shm_item nl-dfw nl-jc-sb">
+                                <div class="ip">
+                                    <span>94.180.178.125</span>
+                                </div>
+                                <div class="date">
+                                    <span>Dec. 9, 2021, 5:27 a.m.</span>
+                                </div>
+                                <div class="device nl-dfw nl-alt-center">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 12L13 12C13.5523 12 14 11.5523 14 11L14 4C14 3.44771 13.5523 3 13 3L3 3C2.44771 3 2 3.44771 2 4L2 11C2 11.5523 2.44771 12 3 12Z" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10 14H6" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M2 9.5H14" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 12V14" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                    <span>lg ldk-210 (android 10)</span>
+                                </div>
+                                <div class="lang">
+                                    <span>RU</span>
+                                </div>
+                                <div class="version">
+                                    <span>v.1.0.3</span>
+                                </div>
+                            </li>
+                            <li class="nl-ipl_item nl-shm_item nl-dfw nl-jc-sb">
+                                <div class="ip">
+                                    <span>94.180.178.125</span>
+                                </div>
+                                <div class="date">
+                                    <span>Dec. 9, 2021, 5:27 a.m.</span>
+                                </div>
+                                <div class="device nl-dfw nl-alt-center">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 1.5H5C4.44772 1.5 4 1.94772 4 2.5V13.5C4 14.0523 4.44772 14.5 5 14.5H11C11.5523 14.5 12 14.0523 12 13.5V2.5C12 1.94772 11.5523 1.5 11 1.5Z" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4 3.5H12" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4 12.5H12" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>lg ldk-210 (android 10)</span>
+                                </div>
+                                <div class="lang">
+                                    <span>RU</span>
+                                </div>
+                                <div class="version">
+                                    <span>v.1.0.3</span>
+                                </div>
+                            </li>
+                            <li class="nl-ipl_item nl-shm_item nl-dfw nl-jc-sb">
+                                <div class="ip">
+                                    <span>94.180.178.125</span>
+                                </div>
+                                <div class="date">
+                                    <span>Dec. 9, 2021, 5:27 a.m.</span>
+                                </div>
+                                <div class="device nl-dfw nl-alt-center">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 12L13 12C13.5523 12 14 11.5523 14 11L14 4C14 3.44771 13.5523 3 13 3L3 3C2.44771 3 2 3.44771 2 4L2 11C2 11.5523 2.44771 12 3 12Z" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10 14H6" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M2 9.5H14" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 12V14" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                    <span>lg ldk-210 (android 10)</span>
+                                </div>
+                                <div class="lang">
+                                    <span>RU</span>
+                                </div>
+                                <div class="version">
+                                    <span>v.1.0.3</span>
+                                </div>
+                            </li>
+                            <li class="nl-ipl_item nl-shm_item nl-dfw nl-jc-sb">
+                                <div class="ip">
+                                    <span>94.180.178.125</span>
+                                </div>
+                                <div class="date">
+                                    <span>Dec. 9, 2021, 5:27 a.m.</span>
+                                </div>
+                                <div class="device nl-dfw nl-alt-center">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 1.5H5C4.44772 1.5 4 1.94772 4 2.5V13.5C4 14.0523 4.44772 14.5 5 14.5H11C11.5523 14.5 12 14.0523 12 13.5V2.5C12 1.94772 11.5523 1.5 11 1.5Z" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4 3.5H12" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4 12.5H12" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>lg ldk-210 (android 10)</span>
+                                </div>
+                                <div class="lang">
+                                    <span>RU</span>
+                                </div>
+                                <div class="version">
+                                    <span>v.1.0.3</span>
+                                </div>
+                            </li>
+                            <li class="nl-ipl_item nl-shm_item nl-dfw nl-jc-sb">
+                                <div class="ip">
+                                    <span>94.180.178.125</span>
+                                </div>
+                                <div class="date">
+                                    <span>Dec. 9, 2021, 5:27 a.m.</span>
+                                </div>
+                                <div class="device nl-dfw nl-alt-center">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 12L13 12C13.5523 12 14 11.5523 14 11L14 4C14 3.44771 13.5523 3 13 3L3 3C2.44771 3 2 3.44771 2 4L2 11C2 11.5523 2.44771 12 3 12Z" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10 14H6" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M2 9.5H14" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 12V14" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                    <span>lg ldk-210 (android 10)</span>
+                                </div>
+                                <div class="lang">
+                                    <span>RU</span>
+                                </div>
+                                <div class="version">
+                                    <span>v.1.0.3</span>
+                                </div>
+                            </li>
+                            <button class="nl-btn_transparent nl-shm_btn pink">Загрузить все</button>
+                        </ul>
+                    </div>
+                </div>
+                <div data-target="chat-view" data-type="chat" class="nl-pop_up">
+                    <div class="nl-pop_up-wrap chat">
+                        <div class="nl-pop_up-header">
+                            <h4>Александр, 29</h4>
+                            <i class="nl-close">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25 7L7 25" stroke="#E0CCE0" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M25 25L7 7" stroke="#E0CCE0" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </i>
+                        </div>
+                        <div class="nl-pop_chat-wrap">
+                            <h3 class="nl-pch_date">пт. 14 марта 2021</h3>
+                            <div class="nl-pch_item me">
+                                <div class="nl-pchi_header nl-dfw nl-jc-sb">
+                                    <span>05 мар. 2021 - 22:40</span>
+                                    <h4>Александра</h4>
+                                </div>
+                                <p class="nl-pchi_message">
+                                    At vero eos et accusamus et iusto
+                                </p>
+                            </div>
+                            <div class="nl-pch_item him">
+                                <div class="nl-pchi_header nl-dfw nl-jc-sb">
+                                    <h4>Александра</h4>
+                                    <span>05 мар. 2021 - 22:40</span>
+                                </div>
+                                <p class="nl-pchi_message">
+                                    At vero eos et accusamus et iusto
+                                </p>
+                            </div>
+                            <h3 class="nl-pch_date">пт. 14 марта 2021</h3>
+                            <div class="nl-pch_item me">
+                                <div class="nl-pchi_header nl-dfw nl-jc-sb">
+                                    <span>05 мар. 2021 - 22:40</span>
+                                    <h4>Александра</h4>
+                                </div>
+                                <p class="nl-pchi_message">
+                                    At vero eos et accusamus et iusto
+                                </p>
+                            </div>
+                            <div class="nl-pch_item him">
+                                <div class="nl-pchi_header nl-dfw nl-jc-sb">
+                                    <h4>Александра</h4>
+                                    <span>05 мар. 2021 - 22:40</span>
+                                </div>
+                                <p class="nl-pchi_message">
+                                    At vero eos et accusamus et iusto
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-target="chat-view-warn" data-type="chat" class="nl-pop_up">
+                    <div class="nl-pop_up-wrap chat">
+                        <div class="nl-pop_up-header">
+                            <h4>Александр, 29</h4>
+                            <i class="nl-close">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25 7L7 25" stroke="#E0CCE0" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M25 25L7 7" stroke="#E0CCE0" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </i>
+                        </div>
+                        <div class="nl-pop_chat-wrap">
+                            <div class="nl-pch_item him">
+                                <div class="nl-pchi_header nl-dfw nl-jc-sb">
+                                    <h4>Александра</h4>
+                                    <span>05 мар. 2021 - 22:40</span>
+                                </div>
+                                <p class="nl-pchi_message">
+                                    At vero eos et accusamus et iusto
+                                </p>
+                            </div>
+                            <div class="nl-pch_item red me">
+                                <div class="nl-pchi_header nl-dfw nl-jc-sb">
+                                    <span>05 мар. 2021 - 22:40</span>
+                                    <h4>Александра</h4>
+                                </div>
+                                <p class="nl-pchi_message">
+                                    At vero eos et accusamus et iusto +7 888 888 4556
+                                    <span class="nl-warn">Попытка отправить номер телефона</span>
+                                </p>
+                                <span class="nl-pchi_comment">Предупреждение модератора от 25 мар. 22:54</span>
                             </div>
                         </div>
                     </div>
