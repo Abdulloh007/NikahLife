@@ -81,7 +81,7 @@ section.nl-account_meta_info-header::after {
 .nl-meta_info-list .nl-mil_item.red h4 {
     color: var(--red);
 }
-.nl-part.meta > .nl-btn_transparent {
+.nl-admin-actions .nl-btn_transparent {
     margin-right: 10px;
 }
 .nl-btn_transparent {
@@ -138,14 +138,14 @@ section.nl-account_meta_info-header::after {
     border-radius: 14px;
     background-color: #F9F0F9;
     margin-bottom: 8px;
-    -webkit-column-gap: 10px;
+    /* -webkit-column-gap: 10px;
     column-gap: 10px;
     -webkit-row-gap: 10px;
-    row-gap: 10px;
+    row-gap: 10px; */
 }
 .nl-is_item h4 {
     width: 100%;
-    margin: 0;
+    margin: 0 0 10px;
     font-size: 14px;
     color: var(--blue);
 }
@@ -159,6 +159,7 @@ section.nl-account_meta_info-header::after {
     padding: 8px 15px;
     border: 1px solid #F1DCF1;
     border-radius: 8px;
+    margin: 0 10px 10px 0;
 }
 /* Chat Styles */
 .nl-chat {
@@ -559,7 +560,99 @@ section.nl-account_meta_info-header::after {
 }
 
 /* ---------- Media Styles ---------- */
-@media (max-width: 1200px) { ... }
+@media (max-width: 1200px) {
+    .nl-account_meta_info-header .nl-part {
+        width: 100%;
+    }
+    .nl-admin-actions {
+        margin-left: auto;
+    }
+    .nl-part.meta {
+        padding-left: 50px;
+        margin-top: 10px;
+    }
+    /* Album Styles */
+    .nl-album {
+        width: 50%;
+    }
+    .nl-a_item {
+        width: calc(50% - 7px);
+        height: 200px;
+        margin-right: 14px;
+        margin-bottom: 14px;
+    }
+    .nl-a_item img {
+        left: 0;
+        width: 100%;
+    }
+    /* Sticks Style */
+    .nl-info_sticks {
+        width: calc(50% - 40px);
+    }
+    .nl-is_item {
+        margin-bottom: 15px;
+    }
+    /* Chat Styles */
+    .nl-chat {
+        width: 50%;
+        margin-top: 40px;
+    }
+    /* Information Styles */
+    .nl-important-info {
+        width: calc(50% - 40px);
+        margin-top: 40px;
+    }
+    .nl-if_item {
+        margin-bottom: 30px;
+    }
+    .nl-ifi_info-wrap h3 {
+        font-size: 26px;
+    }
+    .nl-ifi_info-wrap p {
+        font-size: 14px;
+    }
+}
 @media (max-width: 992px) { ... }
-@media (max-width: 768px) { ... }
-@media (max-width: 576px) { ... }
+@media (max-width: 768px) {
+    .nl-part.meta {
+        padding: 0;
+    }
+    .nl-meta_info-list {
+        margin: 0;
+    }
+
+
+    .nl-album {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .nl-a_item img {
+        width: 140%;
+        left: -20%;
+    }
+    .nl-info_sticks, .nl-chat, .nl-important-info {
+        width: 100%;
+    }
+    /* PopUps Styles */
+    .nl-pop_up[data-target="history"] .nl-pop_up-wrap {
+        width: 100%;
+    }
+    .nl-ip-list {
+        overflow-x: auto;
+    }
+    .nl-ipl_item {
+        min-width: 700px;
+    }
+}
+@media (max-width: 576px) {
+    .nl-admin-actions {
+        margin-top: 15px;
+    }
+    .nl-admin-actions {
+        margin-top: 15px;
+    }
+    .nl-mil_item {
+        margin-bottom: 10px;
+        margin-right: 25px;
+    }
+}

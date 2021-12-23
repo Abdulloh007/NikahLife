@@ -135,6 +135,14 @@ label.nl-radio-wrap {
     color: var(--blue);
     margin: 0 0 30px;
 }
+.nl-sort_btn {
+    height: 25px;
+    width: 25px;
+    display: none;
+}
+.nl-sort_btn path {
+    fill: var(--blue);
+}
 .nl-accounts-list {
     overflow-x: auto;
     padding-bottom: 15px;
@@ -251,5 +259,34 @@ label.nl-radio-wrap {
 /* ---------- Media Styles ---------- */
 @media (max-width: 1200px) { ... }
 @media (max-width: 992px) { ... }
-@media (max-width: 768px) { ... }
+@media (max-width: 768px) {
+    .nl-side-menu {
+        padding: 30px;
+    }
+    .nl-filt_and_sort {
+        width: 100%;
+    }
+    .nl-fas_item > label {
+        width: 100%;
+    }
+    .nl-accounts_list-wrap {
+        width: 100%;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .nl-heading {
+        width: calc(100% - 40px);
+    }
+    .nl-sort_btn {
+        display: block;
+    }
+    .nl-accounts-list {
+        width: 100%;
+    }
+
+}
 @media (max-width: 576px) { ... }
