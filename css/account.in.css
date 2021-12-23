@@ -370,7 +370,7 @@ section.nl-account_meta_info-header::after {
     z-index: -1;
 }
 .nl-show_more.not_opened::after {
-    background-image: linear-gradient(0deg, #fff 50%, #fff0 100%);
+    background-image: linear-gradient(0deg, #fff 50%, #fff1 100%);
     z-index: 1;
 }
 .nl-show_more .nl-shm_btn {
