@@ -229,8 +229,8 @@ label.nl-radio-wrap {
 .nl-alw-nav {
     margin: 25px 0;
     align-items: center;
-    column-gap: 10px;
-    -webkit-column-gap: 10px;
+    /* column-gap: 10px;
+    -webkit-column-gap: 10px; */
 }
 .nl-alw-nav .nl-btn_transparent {
     padding: 8px;
@@ -240,6 +240,7 @@ label.nl-radio-wrap {
 .nl-alw-nav .nl-btn_grad {
     align-items: center;
     display: flex;
+    margin: 0 10px;
 }
 .nl-alw-nav p {
     font-size: 14px;

@@ -14,8 +14,8 @@ section.nl-account_meta_info-header::after {
     background-image: linear-gradient(270deg, rgba(235, 218, 235, 0) 0%, #EBDAEB 51.56%, rgba(235, 218, 235, 0) 100%);
 }
 .nl-part {
-    -webkit-column-gap: 10px;
-    column-gap: 10px;
+    /* -webkit-column-gap: 10px;
+    column-gap: 10px; */
 }
 .nl-btn_pink {
     padding: 8px;
@@ -29,20 +29,18 @@ section.nl-account_meta_info-header::after {
 .nl-go_back {
     width: 40px;
 }
-.nl-part {
-    -webkit-column-gap: 10px;
-    column-gap: 10px;
-}
 .nl-account_avatar {
     width: 40px;
     height: 40px;
+    margin: 0 10px;
     overflow: hidden;
     border-radius: 14px;
 }
 .nl-meta_info {
-    -webkit-column-gap: 10px;
-    column-gap: 10px;
     align-items: center;
+}
+.nl-meta_info svg {
+    margin-right: 10px;
 }
 .nl-mi_text-wrap h3 {
     margin: 0;
@@ -55,9 +53,15 @@ section.nl-account_meta_info-header::after {
 }
 /* Right Part Styles */
 .nl-meta_info-list {
-    -webkit-column-gap: 35px;
-    column-gap: 35px;
+    /* -webkit-column-gap: 35px;
+    column-gap: 35px; */
+    margin-right: 45px;
+}
+.nl-mil_item {
     margin-right: 35px;
+}
+.nl-meta_info-list .nl-mil_item:last-child {
+    margin-right: 0;
 }
 .nl-mil_item p {
     font-size: 10px;
@@ -77,7 +81,9 @@ section.nl-account_meta_info-header::after {
 .nl-meta_info-list .nl-mil_item.red h4 {
     color: var(--red);
 }
-
+.nl-part.meta > .nl-btn_transparent {
+    margin-right: 10px;
+}
 .nl-btn_transparent {
     border: 1px solid #EBDAEB;
     border-radius: 14px;
@@ -388,6 +394,9 @@ section.nl-account_meta_info-header::after {
 .nl-pop_up[data-target="history"] .nl-pop_up-wrap {
     width: 710px;
 }
+.nl-ip-list.nl-show_more.not_opened::after {
+    background-color: #fff;
+}
 .nl-ipl_item {
     border-bottom: 1px solid #F2E5F2;
 }
@@ -412,7 +421,7 @@ section.nl-account_meta_info-header::after {
     width: 80px;
 }
 .nl-ipl_item > div {
-    padding: 10px 2px 10px 15px;
+    padding: 20px 10px 10px 15px;
     font-size: 12px;
     color: var(--blue);
 }
@@ -534,6 +543,7 @@ section.nl-account_meta_info-header::after {
     border-radius: 16px 2px 16px 16px;
     background-color: #ED4B47;
     color: #fff;
+    font-size: 12px;
 }
 .nl-pchi_comment {
     font-size: 10px;
