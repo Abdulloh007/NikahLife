@@ -604,6 +604,7 @@ section.nl-account_meta_info-header::after {
     }
     .nl-if_item {
         margin-bottom: 30px;
+        padding: 20px 25px;
     }
     .nl-ifi_info-wrap h3 {
         font-size: 26px;

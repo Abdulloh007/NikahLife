@@ -129,6 +129,9 @@ label.nl-radio-wrap {
 }
 
 /* Accounts ListStyle */
+.nl-accounts_list-wrap .nl-search-form {
+    display: none;
+}
 .nl-heading {
     font-size: 22px;
     font-weight: 400;
@@ -136,8 +139,8 @@ label.nl-radio-wrap {
     margin: 0 0 30px;
 }
 .nl-sort_btn {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     display: none;
 }
 .nl-sort_btn path {
@@ -278,8 +281,15 @@ label.nl-radio-wrap {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
+    .nl-accounts_list-wrap .nl-search-form {
+        display: flex;
+        padding: 10px 15px
+    }
+    .nl-search-form input {
+        font-size: 14px;
+    }
     .nl-heading {
-        width: calc(100% - 40px);
+        width: calc(100% - 35px);
     }
     .nl-sort_btn {
         display: block;

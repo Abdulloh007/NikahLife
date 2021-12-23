@@ -123,13 +123,6 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="nl-search-form nl-dfw">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.25 12.5C10.1495 12.5 12.5 10.1495 12.5 7.25C12.5 4.35051 10.1495 2 7.25 2C4.35051 2 2 4.35051 2 7.25C2 10.1495 4.35051 12.5 7.25 12.5Z" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M10.9619 10.9625L13.9995 14.0001" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <input type="text" name="" placeholder="Поиск по анкетам" id="">
-                            </div>
                             <div class="nl-caunt-tracker">
                                 <div class="nl-ct_item nl-dfw">
                                     <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -277,6 +270,13 @@
                             </div>
                         </div>
                         <div class="nl-accounts_list-wrap">
+                            <div class="nl-search-form nl-dfw">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.25 12.5C10.1495 12.5 12.5 10.1495 12.5 7.25C12.5 4.35051 10.1495 2 7.25 2C4.35051 2 2 4.35051 2 7.25C2 10.1495 4.35051 12.5 7.25 12.5Z" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.9619 10.9625L13.9995 14.0001" stroke="#001A48" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <input type="text" name="" placeholder="Поиск по анкетам" id="">
+                            </div>
                             <h2 class="nl-heading">База анкет пользователей</h2>
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="filter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="filter" class="nl-sort_btn nl-pop_up-btn"><path fill="currentColor" d="M487.976 0H24.028C2.71 0-8.047 25.866 7.058 40.971L192 225.941V432c0 7.831 3.821 15.17 10.237 19.662l80 55.98C298.02 518.69 320 507.493 320 487.98V225.941l184.947-184.97C520.021 25.896 509.338 0 487.976 0z" class=""></path></svg>
                             <ul class="nl-accounts-list">
@@ -789,7 +789,7 @@
         <script type="text/javascript" src="./index.js"></script>
         <script type="text/javascript" src="./glob.js"></script>
         <script type="text/javascript">
-            if (window.innerWidth < 992) {
+            if (window.innerWidth < 768) {
                 let filterWrap = document.querySelector('.nl-filt_and_sort'),
                 filterEmbed = document.querySelector('.nl-pop_up[data-target="filter"] .nl-pop_up-wrap');
 
